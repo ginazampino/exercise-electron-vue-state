@@ -1,0 +1,13 @@
+.theme-dark {
+    transition: .1s ease-in-out;
+
+    &#app-content {
+        background-color: $color--ui-dark-01;
+    }
+
+    // Titlebar (Dark):
+
+    #titlebar {
+        background-color: $color--ui-dark-03;
+    }
+}

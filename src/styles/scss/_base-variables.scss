@@ -5,3 +5,22 @@ $screen-md: rem(768px);
 $screen-lg: rem(992px);
 $screen-xl: rem(1200px);
 $screen-xxl: rem(1400px);
+
+// Accent colors:
+$color--white: #FAFAFA;
+$color--black: #222222;
+$color--accent: #5fbaff;
+
+// Dark theme:
+$color--ui-dark-01: #1e1f21;
+$color--ui-dark-02: #2e2e30;
+$color--ui-dark-03: #363639;
+$color--ui-dark-04: #4e4e51;
+$color--text-primary-onDark: #f5f4f3;
+
+// Light theme:
+$color--ui-light-01: #eeeff1;
+$color--ui-light-02: #eaeaea;
+$color--ui-light-03: #e0e0e0;
+$color--ui-light-04: #f6f6f7;
+$color--text-primary-onLight: $color--black;

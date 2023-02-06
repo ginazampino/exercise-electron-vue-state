@@ -1,0 +1,13 @@
+.theme-light {
+    transition: .1s ease-in-out;
+
+    &#app-content {
+        background-color: $color--ui-light-01;
+    }
+
+    // Titlebar (Light):
+
+    #titlebar {
+        background-color: $color--ui-light-01;
+    }
+}

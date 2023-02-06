@@ -14,7 +14,7 @@ const createWindow = () => {
     });
 
     // Load application from server:
-    window.loadURL('http://localhost:5174/');
+    window.loadURL('http://localhost:5173/');
     
     // Handle application controls:
     ipcMain.handle('quit-app', () => {
