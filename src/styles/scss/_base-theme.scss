@@ -104,6 +104,12 @@ table {
     width: 100%;
 }
 
+#app-layout {
+    @include flex(center, center, row);
+    height: 100%;
+    padding-top: rem(45px);
+}
+
 // Titlebar:
 
 #titlebar {
@@ -148,4 +154,25 @@ table {
     flex-grow: 1;
     height: 100%;
     padding: 0 rem(10px);
+}
+
+// Sidebar:
+
+#sidebar {
+    height: 100%;
+    overflow-y: overlay;
+    position: relative;
+    width: rem(210px);
+
+    * {
+        @extend .noselect;
+    }
+}
+
+// Content:
+
+#content-reader {
+    flex-grow: 1;
+    height: 100%;
+    overflow: auto;
 }

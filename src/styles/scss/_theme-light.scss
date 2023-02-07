@@ -9,11 +9,13 @@
 
     #titlebar {
         background-color: $color--ui-light-01;
+        box-shadow: 0 4px 6px -2px rgba($color--ui-dark-01, .1);
     }
 
     #titlebar-title,
     #toggle-sidebar,
     #toggle-mode,
+    #toggle-color,
     #minimize-app,
     #maximize-app,
     #quit-app {
@@ -24,11 +26,88 @@
         transition: .1s ease-in-out;
 
         &:hover {
-            background-color: $color--accent;
             transition: .1s ease-in-out;
+        }
+    }
 
-            i {
-                color: $color--text-primary-onDark;
+    // Sidebar (Light):
+
+    #sidebar {
+        color: $color--text-primary-onDark;
+    }
+    
+}
+
+/*
+
+    Accents:
+
+*/
+
+
+.accent-pink {
+    #sidebar {
+        background-color: $color--accent-pink-onLight;
+    }
+
+    #titlebar {
+        li {
+            transition: .1s ease-in-out;
+    
+            &:hover {
+                transition: .1s ease-in-out;
+                background-color: $color--accent-pink-onLight;
+            }
+        }
+    }
+}
+
+.accent-green {
+    #sidebar {
+        background-color: $color--accent-green-onLight;
+    }
+
+    #titlebar {
+        li {
+            transition: .1s ease-in-out;
+    
+            &:hover {
+                transition: .1s ease-in-out;
+                background-color: $color--accent-green-onLight;
+            }
+        }
+    }
+}
+
+.accent-blue {
+    #sidebar {
+        background-color: $color--accent-blue-onLight;
+    }
+
+    #titlebar {
+        li {
+            transition: .1s ease-in-out;
+    
+            &:hover {
+                transition: .1s ease-in-out;
+                background-color: $color--accent-blue-onLight;
+            }
+        }
+    }
+}
+
+.accent-purple {
+    #sidebar {
+        background-color: $color--accent-purple-onLight;
+    }
+
+    #titlebar {
+        li {
+            transition: .1s ease-in-out;
+    
+            &:hover {
+                transition: .1s ease-in-out;
+                background-color: $color--accent-purple-onLight;
             }
         }
     }

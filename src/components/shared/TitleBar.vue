@@ -14,6 +14,9 @@
             <li id="toggle-mode" @click="toggleMode">
                 <i :class="`fa-regular fa-toggle-${toggleStatus}`"></i>
             </li>
+            <li id="toggle-color" @click="toggleColor">
+                <i class="fa-regular fa-paint-roller"></i>
+            </li>
             <li id="minimize-app">
                 <i class="fa-regular fa-minus"></i>
             </li>
@@ -41,6 +44,9 @@
             toggleMode() {
                 this.toggleModeIcon();
                 this.$emit('toggle-mode');
+            },
+            toggleColor() {
+                this.$emit('toggle-color');
             }
         }
     };
