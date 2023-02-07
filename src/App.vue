@@ -29,7 +29,7 @@
 				(this.colorMode === 'dark') ? this.colorMode = 'light' : this.colorMode = 'dark';
 			},
 			toggleColor() {
-				const accentArray = ['blue', 'purple', 'green', 'pink'];
+				const accentArray = ['blue', 'purple', 'pink', 'red', 'orange', 'yellow', 'green'];
 				const currentColor = accentArray.indexOf(this.accentColor);
 				this.accentColor = accentArray.at(currentColor + 1)
 			}

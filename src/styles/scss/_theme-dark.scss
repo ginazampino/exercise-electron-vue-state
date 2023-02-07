@@ -12,6 +12,7 @@
     }
 
     #sidebar {
+        background-color: $color--ui-dark-02;
         color: $color--text-primary-onDark;
         transition: background-color .1s ease-in-out;
     }
@@ -21,6 +22,7 @@
 
         &:hover {
             transition: .1s ease-in-out;
+            color: $color--text-primary-onLight;
         }
     }
 
@@ -31,10 +33,6 @@
     */
 
     &.accent-undefined {
-        #sidebar {
-            background-color: $color--ui-dark-02;
-        }
-
         #titlebar li:hover {
             background-color: rgba($color--ui-dark-04, .75);
         }
@@ -48,7 +46,7 @@
 
     &.accent-blue {
         #titlebar li:hover {
-            background-color: $color--accent-blue-onLight;
+            background-color: $color--accent-blue-onDark;
         }
     }
 
@@ -60,7 +58,7 @@
 
     &.accent-pink {
         #titlebar li:hover {
-            background-color: $color--accent-pink-onLight;
+            background-color: $color--accent-pink-onDark;
         }
     }
 
@@ -72,7 +70,7 @@
 
     &.accent-green {
         #titlebar li:hover {
-            background-color: $color--accent-green-onLight;
+            background-color: $color--accent-green-onDark;
         }
     }
 
@@ -84,7 +82,43 @@
 
     &.accent-purple {
         #titlebar li:hover {
-            background-color: $color--accent-purple-onLight;
+            background-color: $color--accent-purple-onDark;
+        }
+    }
+
+    /*
+
+        Accent: Yellow
+
+    */
+
+    &.accent-yellow {
+        #titlebar li:hover {
+            background-color: $color--accent-yellow-onDark;
+        }
+    }
+
+    /*
+
+        Accent: Orange
+
+    */
+
+    &.accent-orange {
+        #titlebar li:hover {
+            background-color: $color--accent-orange-onDark;
+        }
+    }
+
+    /*
+
+        Accent: Red
+
+    */
+
+    &.accent-red {
+        #titlebar li:hover {
+            background-color: $color--accent-red-onDark;
         }
     }
 }

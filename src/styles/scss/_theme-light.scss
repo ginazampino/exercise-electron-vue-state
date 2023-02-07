@@ -87,4 +87,40 @@
             background-color: $color--accent-purple-onLight;
         }
     }
+
+    /*
+
+        Accent: Yellow
+
+    */
+
+    &.accent-yellow {
+        #titlebar li:hover {
+            background-color: $color--accent-yellow-onLight;
+        }
+    }
+
+    /*
+
+        Accent: Orange
+
+    */
+
+    &.accent-orange {
+        #titlebar li:hover {
+            background-color: $color--accent-orange-onLight;
+        }
+    }
+
+    /*
+
+        Accent: Red
+
+    */
+
+    &.accent-red {
+        #titlebar li:hover {
+            background-color: $color--accent-red-onLight;
+        }
+    }
 }
