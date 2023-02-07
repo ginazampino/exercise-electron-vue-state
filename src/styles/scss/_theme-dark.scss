@@ -35,6 +35,7 @@
     &.accent-undefined {
         #titlebar li:hover {
             background-color: rgba($color--ui-dark-04, .75);
+            color: $color--text-primary-onDark;
         }
     }
 
