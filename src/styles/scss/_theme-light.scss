@@ -2,26 +2,20 @@
     transition: .1s ease-in-out;
 
     &#app-content {
-        background-color: $color--ui-light-01;
+        background-color: $color--ui-light-04;
     }
-
-    // Titlebar (Light):
 
     #titlebar {
-        background-color: $color--ui-light-01;
-        box-shadow: 0 4px 6px -2px rgba($color--ui-dark-01, .1);
-    }
-
-    #titlebar-title,
-    #toggle-sidebar,
-    #toggle-mode,
-    #toggle-color,
-    #minimize-app,
-    #maximize-app,
-    #quit-app {
+        background-color: $color--ui-light-04;
+        box-shadow: 0 4px 6px -2px rgba($color--ui-dark-01, .25);
         color: $color--text-primary-onLight;
     }
 
+    #sidebar {
+        color: $color--text-primary-onLight;
+        transition: background-color .1s ease-in-out;
+    }
+    
     li {
         transition: .1s ease-in-out;
 
@@ -30,85 +24,67 @@
         }
     }
 
-    // Sidebar (Light):
+    /*
 
-    #sidebar {
-        color: $color--text-primary-onDark;
-    }
-    
-}
+        Accent: Undefined
 
-/*
+    */
 
-    Accents:
+    &.accent-undefined {
+        #sidebar {
+            background-color: $color--ui-light-04;
+        }
 
-*/
-
-
-.accent-pink {
-    #sidebar {
-        background-color: $color--accent-pink-onLight;
-    }
-
-    #titlebar {
-        li {
-            transition: .1s ease-in-out;
-    
-            &:hover {
-                transition: .1s ease-in-out;
-                background-color: $color--accent-pink-onLight;
-            }
+        #titlebar li:hover {
+            background-color: rgba($color--ui-light-03, .7);
         }
     }
-}
 
-.accent-green {
-    #sidebar {
-        background-color: $color--accent-green-onLight;
-    }
+    /*
 
-    #titlebar {
-        li {
-            transition: .1s ease-in-out;
-    
-            &:hover {
-                transition: .1s ease-in-out;
-                background-color: $color--accent-green-onLight;
-            }
+        Accent: Blue
+
+    */
+
+    &.accent-blue {
+        #titlebar li:hover {
+            background-color: $color--accent-blue-onLight;
         }
     }
-}
 
-.accent-blue {
-    #sidebar {
-        background-color: $color--accent-blue-onLight;
-    }
+    /*
 
-    #titlebar {
-        li {
-            transition: .1s ease-in-out;
-    
-            &:hover {
-                transition: .1s ease-in-out;
-                background-color: $color--accent-blue-onLight;
-            }
+        Accent: Pink
+
+    */
+
+    &.accent-pink {
+        #titlebar li:hover {
+            background-color: $color--accent-pink-onLight;
         }
     }
-}
 
-.accent-purple {
-    #sidebar {
-        background-color: $color--accent-purple-onLight;
+    /*
+
+        Accent: Green
+
+    */
+
+    &.accent-green {
+        #titlebar li:hover {
+            background-color: $color--accent-green-onLight;
+        }
     }
 
-    #titlebar {
-        li {
-            transition: .1s ease-in-out;
-    
-            &:hover {
-                transition: .1s ease-in-out;
-                background-color: $color--accent-purple-onLight;
-            }
+    /*
+
+        Accent: Purple
+
+    */
+
+    &.accent-purple {
+        #titlebar li:hover {
+            background-color: $color--accent-purple-onLight;
         }
     }
 }

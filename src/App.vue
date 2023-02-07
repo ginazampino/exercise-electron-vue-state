@@ -21,7 +21,7 @@
 		data() {
 			return {
 				colorMode: 'dark',
-				accentColor: 'none'
+				accentColor: 'undefined'
 			}
 		},
 		methods: {
@@ -29,25 +29,9 @@
 				(this.colorMode === 'dark') ? this.colorMode = 'light' : this.colorMode = 'dark';
 			},
 			toggleColor() {
-				switch (this.accentColor) {
-					case 'none':
-						this.accentColor = 'blue'
-						break;
-					case 'blue':
-						this.accentColor = 'purple'
-						break;
-					case 'purple':
-						this.accentColor = 'green'
-						break;
-					case 'green':
-						this.accentColor = 'pink';
-						break;
-					case 'pink':
-						this.accentColor = 'none';
-						break;
-					default:
-						this.accentColor = 'none';
-				}
+				const accentArray = ['blue', 'purple', 'green', 'pink'];
+				const currentColor = accentArray.indexOf(this.accentColor);
+				this.accentColor = accentArray.at(currentColor + 1)
 			}
 		}
 	};

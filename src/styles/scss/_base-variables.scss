@@ -10,6 +10,16 @@ $screen-xxl: rem(1400px);
 $color--white: #FAFAFA;
 $color--black: #222222;
 
+$color--accent-green-onLight: #698F3F;
+$color--accent-blue-onLight: #3E92CC;
+$color--accent-pink-onLight: #B47EB3;
+$color--accent-purple-onLight: #664B96;
+
+$color--accent-green-onDark: #698F3F;
+$color--accent-blue-onDark: #3E92CC;
+$color--accent-pink-onDark: #B47EB3;
+$color--accent-purple-onDark: #664B96;
+
 // Dark theme:
 $color--ui-dark-01: #1e1f21;
 $color--ui-dark-02: #2e2e30;
@@ -23,10 +33,3 @@ $color--ui-light-02: #eaeaea;
 $color--ui-light-03: #e0e0e0;
 $color--ui-light-04: #f6f6f7;
 $color--text-primary-onLight: $color--black;
-$color--accent-green-onLight: #698F3F;
-$color--accent-blue-onLight: #3E92CC;
-$color--accent-brown-onLight: #5F4842;
-$color--accent-grey-onLight: #363946;
-$color--accent-pink-onLight: #B47EB3;
-$color--accent-red-onLight: #8C3023;
-$color--accent-purple-onLight: #664B96;
