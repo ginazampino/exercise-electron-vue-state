@@ -2,7 +2,7 @@
     <header id="titlebar">
         <ul id="sidebar-controls">
             <li id="toggle-sidebar">
-                
+                <i class="fa-regular fa-arrow-left-to-line"></i>
             </li>
         </ul>
         <div id="titlebar-title" class="draggable">
@@ -12,16 +12,16 @@
         </div>
         <ul id="titlebar-controls">
             <li id="toggle-mode" @click="toggleMode">
-                <img :src="getToggleStatus(toggleStatus)"/>
+                <i :class="`fa-regular fa-toggle-${toggleStatus}`"></i>
             </li>
             <li id="minimize-app">
-                <img src="../../assets/icons/minus.svg" />
+                <i class="fa-regular fa-minus"></i>
             </li>
             <li id="maximize-app">
-                <img src="../../assets/icons/maximize.svg" />
+                <i class="fa-regular fa-expand"></i>
             </li>
             <li id="quit-app">
-                <img src="../../assets/icons/x.svg" />
+                <i class="fa-regular fa-xmark"></i>
             </li>
         </ul>
     </header>
@@ -31,19 +31,16 @@
     export default {
         data() {
             return {
-                toggleStatus: 'left'
+                toggleStatus: 'off'
             }
         },
         methods: {
             toggleModeIcon() {
-                (this.toggleStatus === 'left') ? this.toggleStatus = 'right' : this.toggleStatus = 'left';
+                (this.toggleStatus === 'off') ? this.toggleStatus = 'on' : this.toggleStatus = 'off';
             },
             toggleMode() {
                 this.toggleModeIcon();
                 this.$emit('toggle-mode');
-            },
-            getToggleStatus(status) {
-                return '/src/assets/icons/toggle-' + status + '.svg';
             }
         }
     };

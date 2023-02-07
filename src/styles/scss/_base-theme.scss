@@ -114,6 +114,10 @@ table {
     width: 100%;
     z-index: 1;
 
+    * {
+        user-select: none;
+    }
+
     h1 {
         font-family: 'DM Sans', 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: rem(21px);
@@ -132,4 +136,16 @@ table {
         cursor: pointer;
         width: rem(45px);
     }
+
+    i {
+        font-size: rem(16px);
+        line-height: rem(16px);  
+    }
+}
+
+#titlebar-title {
+    @include flex(center, flex-start, row);
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 rem(10px);
 }

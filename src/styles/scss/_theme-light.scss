@@ -10,4 +10,26 @@
     #titlebar {
         background-color: $color--ui-light-01;
     }
+
+    #titlebar-title,
+    #toggle-sidebar,
+    #toggle-mode,
+    #minimize-app,
+    #maximize-app,
+    #quit-app {
+        color: $color--text-primary-onLight;
+    }
+
+    li {
+        transition: .1s ease-in-out;
+
+        &:hover {
+            background-color: $color--accent;
+            transition: .1s ease-in-out;
+
+            i {
+                color: $color--text-primary-onDark;
+            }
+        }
+    }
 }
