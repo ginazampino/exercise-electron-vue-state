@@ -154,6 +154,10 @@ table {
     flex-grow: 1;
     height: 100%;
     padding: 0 rem(10px);
+
+    i {
+        margin-right: rem(7.5px);
+    }
 }
 
 // Sidebar:
