@@ -31,10 +31,11 @@
     */
 
     &.accent-undefined {
-        #sidebar {
-            background-color: $color--ui-light-04;
+        #titlebar-title i {
+            color: rgba($color--ui-dark-04, .25);
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: rgba($color--ui-light-03, .7);
         }
@@ -51,6 +52,7 @@
             color: $color--accent-blue-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-blue-onLight;
         }
@@ -67,6 +69,7 @@
             color: $color--accent-pink-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-pink-onLight;
         }
@@ -83,6 +86,7 @@
             color: $color--accent-green-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-green-onLight;
         }
@@ -99,6 +103,7 @@
             color: $color--accent-purple-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-purple-onLight;
         }
@@ -115,6 +120,7 @@
             color: $color--accent-yellow-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-yellow-onLight;
         }
@@ -131,6 +137,7 @@
             color: $color--accent-orange-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-orange-onLight;
         }
@@ -147,6 +154,7 @@
             color: $color--accent-red-onLight;
         }
 
+        #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-red-onLight;
         }
