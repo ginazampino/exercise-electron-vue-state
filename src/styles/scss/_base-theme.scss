@@ -102,6 +102,18 @@ table {
     overflow: hidden;
     position: relative;
     width: 100%;
+
+    *::-webkit-scrollbar  {
+        background: transparent; 
+        height: rem(5px);
+        width: rem(5px);
+        z-index: 1;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: rem(6px);
+    }
 }
 
 #app-layout {
@@ -172,6 +184,41 @@ table {
         @extend .noselect;
     }
 }
+
+.sidebar-title {
+    padding: rem(25px) rem(25px) rem(15px) rem(25px);
+
+    h2 {
+        font-size: rem(13px);
+        font-weight: 400;
+        letter-spacing: .01em;
+        line-height: rem(13px);
+    }
+}
+
+.sidebar-menu {
+    &.alt {
+        padding: rem(25px) 0 0 0;
+    }
+
+    li {
+        cursor: pointer;
+        font-size: rem(13px);
+        padding: rem(5px) rem(25px);
+        transition: .1s ease-in-out;
+
+        i {
+            font-size: rem(16px);
+            text-align: center;
+            width: rem(20px);
+        }
+
+        span {
+            margin-left: rem(11px);
+        }
+    }
+}
+
 
 // Content:
 

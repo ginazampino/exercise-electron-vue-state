@@ -6,7 +6,7 @@
             </li>
         </ul>
         <div id="titlebar-title" class="draggable">
-            <i class="fa-solid fa-tally"></i>
+            <i class="fa-regular fa-stars"></i>
             <h1>
                 Concetto
             </h1>

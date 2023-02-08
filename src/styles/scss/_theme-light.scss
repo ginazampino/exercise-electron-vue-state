@@ -15,6 +15,12 @@
         color: $color--text-primary-onLight;
         transition: background-color .1s ease-in-out;
     }
+
+    .sidebar-menu {
+        li:hover {
+            background-color: rgba($color--ui-light-04, .75);
+        }
+    }
     
     li {
         transition: .1s ease-in-out;
@@ -157,6 +163,25 @@
         #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-red-onLight;
+        }
+
+        #sidebar {
+            font-weight: 500;
+            color: $color--accent-red-onRed;
+
+            section:not(:last-child) {
+                border-bottom: 1px solid rgba($color--accent-red-onRed, .25);
+            }
+        }
+
+        .sidebar-menu {
+            li i {
+                color: $color--accent-red-onRed;
+            }
+
+            li:hover i {
+                color: $color--accent-red-onLight;
+            }
         }
     }
 }

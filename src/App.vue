@@ -31,7 +31,8 @@
 			toggleColor() {
 				const accentArray = ['blue', 'purple', 'pink', 'red', 'orange', 'yellow', 'green'];
 				const currentColor = accentArray.indexOf(this.accentColor);
-				this.accentColor = accentArray.at(currentColor + 1)
+
+				this.accentColor = accentArray.at(currentColor + 1);
 			}
 		}
 	};
