@@ -183,6 +183,14 @@ table {
     * {
         @extend .noselect;
     }
+
+    section:first-child {
+        padding-top: rem(25px);
+        
+        .sidebar-heading {
+            display: none;
+        }
+    }
 }
 
 .sidebar-heading {
@@ -197,7 +205,7 @@ table {
 }
 
 .sidebar-list {
-    &.alt {
+    &:first-child {
         padding: rem(25px) 0 0 0;
     }
 

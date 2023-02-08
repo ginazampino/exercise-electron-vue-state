@@ -17,10 +17,14 @@
         data() {
             return {
                 planner: {
-                    heading: '',
+                    heading: 'Planner',
                     options: [
                         {module: 'Inbox', icon: 'fa-solid fa-inbox-in'}, 
-                        {module: 'Actions', icon: 'fa-solid fa-bolt'}
+                        {module: 'Actions', icon: 'fa-solid fa-bolt'},
+                        {module: 'Pending', icon: 'fa-solid fa-snooze'},
+                        {module: 'Plans', icon: 'fa-solid fa-square-list'},
+                        {module: 'Ideas', icon: 'fa-solid fa-thought-bubble'},
+                        {module: 'Archive', icon: 'fa-solid fa-box-archive'}
                     ]
                 },
                 workspace: {

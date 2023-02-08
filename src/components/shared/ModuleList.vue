@@ -1,6 +1,6 @@
 <template>
-    <section>
-        <div v-if="heading" class="sidebar-heading">
+    <section :id='"section-" + heading.toLowerCase()'>
+        <div class="sidebar-heading">
             <h2>{{ heading }}</h2>
         </div>
         <ul class="sidebar-list">
@@ -23,6 +23,20 @@
         props: {
             heading: String,
             options: Array
+        },
+        data() {
+            return {
+                moduleCount: null
+            }
+        },
+        methods: {
+            countModules() {
+                const moduleList = document.querySelector('.sidebar-list');
+                console.log(moduleList)
+            }
+        },
+        created() {
+            this.countModules();
         }
     }
 </script>
