@@ -185,7 +185,7 @@ table {
     }
 }
 
-.sidebar-title {
+.sidebar-heading {
     padding: rem(25px) rem(25px) rem(15px) rem(25px);
 
     h2 {
@@ -196,7 +196,7 @@ table {
     }
 }
 
-.sidebar-menu {
+.sidebar-list {
     &.alt {
         padding: rem(25px) 0 0 0;
     }
@@ -219,6 +219,19 @@ table {
     }
 }
 
+.sidebar-toggle {
+    padding: rem(5px) rem(25px) rem(18px) rem(25px);
+
+    button {
+        @extend .noselect;
+        background: transparent;
+        padding: rem(5px) rem(10px);
+        border-radius: rem(8px);
+        font-size: rem(12px);
+        line-height: rem(12px);
+        transition: .1s ease-in-out;
+    }
+}
 
 // Content:
 

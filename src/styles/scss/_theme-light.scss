@@ -16,7 +16,7 @@
         transition: background-color .1s ease-in-out;
     }
 
-    .sidebar-menu {
+    .sidebar-list {
         li:hover {
             background-color: rgba($color--ui-light-04, .75);
         }
@@ -172,15 +172,21 @@
             section:not(:last-child) {
                 border-bottom: 1px solid rgba($color--accent-red-onRed, .25);
             }
+        
+            &:hover::-webkit-scrollbar-thumb {
+                background: $color--accent-red-onRed;
+            }
         }
 
-        .sidebar-menu {
-            li i {
-                color: $color--accent-red-onRed;
-            }
+        .sidebar-list {
+            li {
+                i {
+                    color: $color--accent-red-onRed;
+                }
 
-            li:hover i {
-                color: $color--accent-red-onLight;
+                &:hover i {
+                    color: $color--accent-red-onLight;
+                }
             }
         }
     }

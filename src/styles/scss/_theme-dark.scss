@@ -12,13 +12,24 @@
         box-shadow: 0 4px 6px -2px rgba($color--ui-dark-01, .25);
         color: $color--text-primary-onDark;
     }
+
+    #titlebar-title i {
+        color: $color--text-primary-onDark;
+    }
     
     #titlebar li {
         transition: .1s ease-in-out;
 
         &:hover {
             transition: .1s ease-in-out;
-            color: $color--text-primary-onLight;
+            background-color: rgba($color--ui-dark-04, .75);
+            color: $color--text-primary-onDark;
+        }
+    }
+
+    #sidebar:hover {
+        &::-webkit-scrollbar-thumb {
+            background: $color--text-primary-onDark;
         }
     }
 
@@ -29,7 +40,7 @@
         color: $color--text-primary-onDark;
         transition: background-color .1s ease-in-out;
 
-        .sidebar-title h2 {
+        .sidebar-heading h2 {
             color: rgba($color--text-primary-onDark, .45);
         }
 
@@ -38,7 +49,7 @@
         }
     }
 
-    .sidebar-menu {
+    .sidebar-list {
         li i {
             color: rgba($color--text-primary-onDark, .25);
             transition: .1s ease-in-out;
@@ -53,25 +64,14 @@
         }
     }
 
-    /*
-
-        Accent: Undefined
-
-    */
-
-    &.accent-undefined {
-        #titlebar-title i {
-            color: $color--text-primary-onDark;
-        }
-
-        #titlebar li:hover {
-            background-color: rgba($color--ui-dark-04, .75);
-            color: $color--text-primary-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--text-primary-onDark;
+    .sidebar-toggle {
+        button {
+            background: transparent;
+            color: rgba($color--text-primary-onDark, .25);
+    
+            &:hover {
+                color: $color--text-primary-onDark;
+                background-color: rgba($color--ui-dark-04, .35);
             }
         }
     }
@@ -83,22 +83,15 @@
     */
 
     &.accent-blue {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-blue-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-blue-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-blue-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-blue-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-blue-onDark;
         }
     }
 
@@ -109,22 +102,15 @@
     */
 
     &.accent-pink {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-pink-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-pink-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-pink-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-pink-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-pink-onDark;
         }
     }
 
@@ -135,22 +121,15 @@
     */
 
     &.accent-green {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-green-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-green-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-green-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-green-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-green-onDark;
         }
     }
 
@@ -161,22 +140,15 @@
     */
 
     &.accent-purple {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-purple-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-purple-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-purple-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-purple-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-purple-onDark;
         }
     }
 
@@ -187,22 +159,15 @@
     */
 
     &.accent-yellow {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-yellow-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-yellow-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-yellow-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-yellow-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-yellow-onDark;
         }
     }
 
@@ -213,22 +178,15 @@
     */
 
     &.accent-orange {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-orange-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-orange-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-orange-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-orange-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-orange-onDark;
         }
     }
 
@@ -239,22 +197,15 @@
     */
 
     &.accent-red {
-        #titlebar-title i {
+        #titlebar-title i,
+        .sidebar-list li:hover i,
+        .sidebar-toggle button:hover {
             color: $color--accent-red-onDark;
         }
 
-        #titlebar li:hover {
-            background-color: $color--accent-red-onDark;
-        }
-
-        #sidebar:hover {
-            &::-webkit-scrollbar-thumb {
-                background: $color--accent-red-onDark;
-            }
-        }
-
-        .sidebar-menu li:hover i {
-            color: $color--accent-red-onDark;
+        #titlebar li:hover,
+        #sidebar:hover::-webkit-scrollbar-thumb {
+            background: $color--accent-red-onDark;
         }
     }
 }

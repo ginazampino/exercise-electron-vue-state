@@ -1,21 +1,42 @@
 <template>
     <nav id="sidebar">
-        <SideBarPlanner></SideBarPlanner>
-        <SideBarWorkspace></SideBarWorkspace>
-        <SideBarProject></SideBarProject>
+        <ModuleList v-bind="planner"></ModuleList>
+        <ModuleList v-bind="workspace"></ModuleList>
+        <ModuleList v-bind="project"></ModuleList>
+        <ModuleList v-bind="material"></ModuleList>
     </nav>
 </template>
 
 <script>
-    import SideBarPlanner from './sidebar/SideBarPlanner.vue';
-    import SideBarWorkspace from './sidebar/SideBarWorkspace.vue';
-    import SideBarProject from './sidebar/SideBarProject.vue';
+    import ModuleList from './ModuleList.vue';
 
     export default {
         components: {
-            SideBarPlanner,
-            SideBarWorkspace,
-            SideBarProject
-		}
-    };
+            ModuleList
+        },
+        data() {
+            return {
+                planner: {
+                    heading: '',
+                    options: [
+                        {module: 'Inbox', icon: 'fa-solid fa-inbox-in'}, 
+                        {module: 'Actions', icon: 'fa-solid fa-bolt'}
+                    ]
+                },
+                workspace: {
+                    heading: 'Workspace',
+                    options: [
+                        {module: 'Inbox', icon: 'fa-solid fa-inbox-in'}, 
+                        {module: 'Actions', icon: 'fa-solid fa-bolt'}
+                    ]
+                },
+                project: {
+                    heading: 'Project'
+                },
+                material: {
+                    heading: 'Material'
+                }
+            }
+        }
+    }
 </script>
