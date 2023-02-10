@@ -13,7 +13,16 @@
         </div>
         <ul id="titlebar-controls">
             <li id="toggle-mode" @click="themeStore.toggleMode">
-                <i :class="`fa-regular fa-toggle-${themeStore.modeIcon}`"></i>
+                <i :class="`fa-regular fa-toggle-${ themeStore.modeIcon }`"></i>
+            </li>
+            <li id="minimize-app">
+                <i class="fa-regular fa-minus"></i>
+            </li>
+            <li id="maximize-app">
+                <i class="fa-regular fa-expand"></i>
+            </li>
+            <li id="quit-app">
+                <i class="fa-regular fa-xmark"></i>
             </li>
         </ul>
     </header>
