@@ -1,5 +1,5 @@
 <template>
-    <section :id='"section-" + heading.toLowerCase()'>
+    <section :ref="heading">
         <div class="sidebar-heading">
             <h2>{{ heading }}</h2>
         </div>
@@ -31,11 +31,10 @@
         },
         methods: {
             countModules() {
-                const moduleList = document.querySelector('.sidebar-list');
-                console.log(moduleList)
+                console.log(this.$refs)
             }
         },
-        created() {
+        mounted() {
             this.countModules();
         }
     }

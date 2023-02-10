@@ -1,4 +1,4 @@
-.theme-light {
+.mode-light {
     transition: .1s ease-in-out;
 
     &#app-content {
@@ -36,7 +36,7 @@
 
     */
 
-    &.accent-undefined {
+    &.theme-undefined {
         #titlebar-title i {
             color: rgba($color--ui-dark-04, .25);
         }
@@ -53,7 +53,7 @@
 
     */
 
-    &.accent-blue {
+    &.theme-blue {
         #titlebar-title i {
             color: $color--accent-blue-onLight;
         }
@@ -70,7 +70,7 @@
 
     */
 
-    &.accent-pink {
+    &.theme-pink {
         #titlebar-title i {
             color: $color--accent-pink-onLight;
         }
@@ -87,7 +87,7 @@
 
     */
 
-    &.accent-green {
+    &.theme-green {
         #titlebar-title i {
             color: $color--accent-green-onLight;
         }
@@ -104,7 +104,7 @@
 
     */
 
-    &.accent-purple {
+    &.theme-purple {
         #titlebar-title i {
             color: $color--accent-purple-onLight;
         }
@@ -121,7 +121,7 @@
 
     */
 
-    &.accent-yellow {
+    &.theme-yellow {
         #titlebar-title i {
             color: $color--accent-yellow-onLight;
         }
@@ -138,7 +138,7 @@
 
     */
 
-    &.accent-orange {
+    &.theme-orange {
         #titlebar-title i {
             color: $color--accent-orange-onLight;
         }
@@ -155,7 +155,7 @@
 
     */
 
-    &.accent-red {
+    &.theme-red {
         #titlebar-title i {
             color: $color--accent-red-onLight;
         }

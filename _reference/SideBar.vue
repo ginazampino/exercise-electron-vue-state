@@ -2,8 +2,6 @@
     <nav id="sidebar">
         <ModuleList v-bind="planner"></ModuleList>
         <ModuleList v-bind="workspace"></ModuleList>
-        <ModuleList v-bind="project"></ModuleList>
-        <ModuleList v-bind="material"></ModuleList>
     </nav>
 </template>
 
@@ -33,12 +31,6 @@
                         {module: 'Inbox', icon: 'fa-solid fa-inbox-in'}, 
                         {module: 'Actions', icon: 'fa-solid fa-bolt'}
                     ]
-                },
-                project: {
-                    heading: 'Project'
-                },
-                material: {
-                    heading: 'Material'
                 }
             }
         }
