@@ -20,7 +20,6 @@
 </template>
 
 <script>
-    import { ref } from 'vue'
     import { useThemeStore } from '../stores/ThemeStore';
 
     export default {
