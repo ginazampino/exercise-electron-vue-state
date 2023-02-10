@@ -1,5 +1,5 @@
 <template>
-	<div id="app-content" :class="`mode-${ themeStore.modeScheme }`">
+	<div id="app-content" :class="`mode-${ themeStore.modeTheme } theme-${ themeStore.colorTheme }`">
 		<TitleBar />
 		<div id="app-layout"></div>
 	</div>

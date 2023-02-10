@@ -15,6 +15,9 @@
             <li id="toggle-mode" @click="themeStore.toggleMode">
                 <i :class="`fa-regular fa-toggle-${ themeStore.modeIcon }`"></i>
             </li>
+            <li id="toggle-color" @click="themeStore.toggleColor">
+                <i class="fa-regular fa-paint-roller"></i>
+            </li>
             <li id="minimize-app">
                 <i class="fa-regular fa-minus"></i>
             </li>
