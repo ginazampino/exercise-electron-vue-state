@@ -4,7 +4,9 @@ const {
     getWindowSize, 
     setWindowSize, 
     getMaximizedState, 
-    setMaximizedState 
+    setMaximizedState,
+    setWindowPosition,
+    getWindowPosition
 } = require('./config');
 
 app.disableHardwareAcceleration();
@@ -20,7 +22,7 @@ const createWindow = () => {
             preload: path.join(__dirname, 'preload.js')
         }   
     });
-
+    
     // Load application from server:
     window.loadURL('http://localhost:5173/');
     
@@ -82,6 +84,33 @@ const createWindow = () => {
     };
 
     handleMaximize();
+
+    // Handle window repositioning:
+    window.on('moved', () => {
+        setWindowPosition(window.getPosition());
+    });
+
+    /*
+
+        Executed on initial creation of the 
+        Electron window.
+
+        Gets the last recorded array indicating
+        the window's previous x and y coordinates.
+
+        If no array, then do nothing (center).
+
+    */
+
+    function handlePosition() {
+        const position = getWindowPosition();
+
+        if (position) {
+            window.setPosition(position[0], position[1]);
+        } else return;
+    };
+
+    handlePosition();
 };
 
 app.whenReady().then(() => {
