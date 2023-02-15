@@ -12,8 +12,8 @@
             </h1>
         </div>
         <ul id="titlebar-controls">
-            <li id="toggle-mode" @click="themeStore.toggleMode">
-                <i :class="`fa-regular fa-toggle-${ themeStore.modeIcon }`"></i>
+            <li id="toggle-mode" @click="modeStore.toggleMode">
+                <i :class="`fa-regular fa-toggle-${ modeStore.modeIcon }`"></i>
             </li>
             <li id="toggle-color" @click="themeStore.toggleColor">
                 <i class="fa-regular fa-paint-roller"></i>
@@ -32,12 +32,14 @@
 </template>
 
 <script>
-    import { useThemeStore } from '../stores/ThemeStore';
+    import { useWinModeStore } from '../stores/WinModeStore';
+    import { useWinThemeStore } from '../stores/WinThemeStore';
 
     export default {
         setup() {
-            const themeStore = useThemeStore();
-			return { themeStore };
+            const themeStore = useWinThemeStore();
+            const modeStore = useWinModeStore();
+			return { themeStore, modeStore };
         }
     };
 </script>
