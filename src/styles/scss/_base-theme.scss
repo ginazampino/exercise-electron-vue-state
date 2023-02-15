@@ -17,7 +17,17 @@
 
 *, *::before, *::after {
     box-sizing: border-box;
-    outline: none;
+}
+
+* {
+    outline: 2px solid transparent;
+    outline-offset: -2px;
+    transition: .1s outline-color ease-in-out;
+}
+
+*:focus, *:focus-visible {
+    outline-offset: -2px;
+    transition: .1s outline-color ease-in-out;
 }
 
 html {
@@ -132,10 +142,6 @@ table {
     width: 100%;
     z-index: 1;
 
-    * {
-        user-select: none;
-    }
-
     h1 {
         font-family: 'DM Sans', 'Open Sans', Arial, Helvetica, sans-serif;
         font-size: rem(21px);
@@ -145,7 +151,7 @@ table {
         text-transform: lowercase;
     }
 
-    ul, li {
+    ul, li, button {
         @include flex(center, center, row);
         height: 100%;
     }
@@ -153,6 +159,12 @@ table {
     li {
         cursor: pointer;
         width: rem(45px);
+    }
+
+    button {
+        background-color: transparent;
+        color: inherit;
+        width: 100%;
     }
 
     i {
@@ -180,9 +192,9 @@ table {
     position: relative;
     width: rem(210px);
 
-    * {
-        @extend .noselect;
-    }
+    // * {
+    //     @extend .noselect;
+    // }
 
     section:first-child {
         padding-top: rem(25px);
@@ -231,7 +243,7 @@ table {
     padding: rem(5px) rem(25px) rem(18px) rem(25px);
 
     button {
-        @extend .noselect;
+        // @extend .noselect;
         background: transparent;
         padding: rem(5px) rem(10px);
         border-radius: rem(8px);

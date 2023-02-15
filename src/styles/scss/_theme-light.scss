@@ -11,6 +11,10 @@
         color: $color--text-primary-onLight;
     }
 
+    #titlebar li button:focus {
+        outline-color: $color--text-primary-onLight;
+    }
+
     #sidebar {
         color: $color--text-primary-onLight;
         transition: background-color .1s ease-in-out;
@@ -62,6 +66,10 @@
         #titlebar li:hover {
             background-color: $color--accent-blue-onLight;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-blue-onLight;
+        }
     }
 
     /*
@@ -78,6 +86,10 @@
         #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-pink-onLight;
+        }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-pink-onLight;
         }
     }
 
@@ -96,6 +108,10 @@
         #titlebar li:hover {
             background-color: $color--accent-green-onLight;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-green-onLight;
+        }
     }
 
     /*
@@ -112,6 +128,10 @@
         #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-purple-onLight;
+        }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-purple-onLight;
         }
     }
 
@@ -130,6 +150,10 @@
         #titlebar li:hover {
             background-color: $color--accent-yellow-onLight;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-yellow-onLight;
+        }
     }
 
     /*
@@ -147,6 +171,10 @@
         #titlebar li:hover {
             background-color: $color--accent-orange-onLight;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-orange-onLight;
+        }
     }
 
     /*
@@ -163,6 +191,10 @@
         #sidebar,
         #titlebar li:hover {
             background-color: $color--accent-red-onLight;
+        }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-red-onLight;
         }
 
         #sidebar {

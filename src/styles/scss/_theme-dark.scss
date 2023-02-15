@@ -25,11 +25,9 @@
             background-color: rgba($color--ui-dark-04, .75);
             color: $color--text-primary-onDark;
         }
-    }
 
-    #sidebar:hover {
-        &::-webkit-scrollbar-thumb {
-            background: $color--text-primary-onDark;
+        button:focus {
+            outline-color: $color--text-primary-onDark;
         }
     }
 
@@ -46,6 +44,12 @@
 
         section:not(:last-child) {
             border-bottom: 1px solid  $color--ui-dark-04;
+        }
+
+        &:hover {
+            &::-webkit-scrollbar-thumb {
+                background: $color--text-primary-onDark;
+            }
         }
     }
 
@@ -93,6 +97,10 @@
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-blue-onDark;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-blue-onDark;
+        }
     }
 
     /*
@@ -111,6 +119,10 @@
         #titlebar li:hover,
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-pink-onDark;
+        }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-pink-onDark;
         }
     }
 
@@ -131,6 +143,10 @@
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-green-onDark;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-green-onDark;
+        }
     }
 
     /*
@@ -149,6 +165,10 @@
         #titlebar li:hover,
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-purple-onDark;
+        }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-purple-onDark;
         }
     }
 
@@ -169,6 +189,10 @@
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-yellow-onDark;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-yellow-onDark;
+        }
     }
 
     /*
@@ -188,6 +212,10 @@
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-orange-onDark;
         }
+
+        #titlebar button:focus {
+            outline-color: $color--accent-orange-onDark;
+        }
     }
 
     /*
@@ -206,6 +234,10 @@
         #titlebar li:hover,
         #sidebar:hover::-webkit-scrollbar-thumb {
             background: $color--accent-red-onDark;
+        }
+
+        #titlebar button:focus {    
+            outline-color: $color--accent-red-onDark;
         }
     }
 }
