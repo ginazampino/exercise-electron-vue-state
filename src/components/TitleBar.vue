@@ -30,8 +30,8 @@
                 </button>
             </li>
             <li>
-                <button id="maximize-app" aria-label="Maximize window">
-                    <i class="fa-regular fa-expand" alt="Expand icon"></i>
+                <button id="maximize-app" @click="screenStore.toggleScreen" :aria-label="`${ screenStore.screenText } window`">
+                    <i :class="`fa-regular fa-${ screenStore.screenIcon }`" :alt="`${ screenStore.screenText } icon`"></i>
                 </button>
             </li>
             <li>
@@ -46,12 +46,14 @@
 <script>
     import { useWinModeStore } from '../stores/WinModeStore';
     import { useWinThemeStore } from '../stores/WinThemeStore';
+    import { useWinScreenStore } from '../stores/WinScreenStore';
 
     export default {
         setup() {
             const themeStore = useWinThemeStore();
             const modeStore = useWinModeStore();
-			return { themeStore, modeStore };
+            const screenStore = useWinScreenStore();
+			return { themeStore, modeStore, screenStore };
         }
     };
 </script>

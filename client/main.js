@@ -1,6 +1,11 @@
 const path = require('path');
 const { app, BrowserWindow, ipcMain } = require('electron');
-const { getWindowSize, setWindowSize } = require('./config');
+const { 
+    getWindowSize, 
+    setWindowSize, 
+    getMaximizedState, 
+    setMaximizedState 
+} = require('./config');
 
 app.disableHardwareAcceleration();
 
@@ -41,6 +46,42 @@ const createWindow = () => {
     window.on('resized', () => {
         setWindowSize(window.getSize());
     });
+
+    // Handle min/max toggling:
+    window.on('maximize', () => {
+        setMaximizedState(true);
+    });
+
+    window.on('unmaximize', () => {
+        setMaximizedState(false);
+    });
+
+    /*
+
+        Executed on initial creation of the 
+        Electron window.
+
+        Gets the last recorded boolean value
+        of the window's maximization state.
+
+        NOTE: If this becomes out-of-sync
+        with front-end Pinia stores, the 
+        expand/compress icons in the titlebar 
+        won't match the window's actual state.
+
+    */
+
+    function handleMaximize() {
+        const maximized = getMaximizedState();
+
+        if (maximized) {
+            window.maximize();
+        } else {
+            window.unmaximize();
+        };
+    };
+
+    handleMaximize();
 };
 
 app.whenReady().then(() => {
