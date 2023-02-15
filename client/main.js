@@ -1,17 +1,15 @@
 const path = require('path');
 const { app, BrowserWindow, ipcMain } = require('electron');
-// const { getWindowSize, setWindowSize } = require('./settings');
+const { getWindowSize, setWindowSize } = require('./config');
 
 app.disableHardwareAcceleration();
 
 const createWindow = () => {
-    // const windowSize = getWindowSize();
+    const windowSize = getWindowSize();
 
     const window = new BrowserWindow({
-        // width: windowSize[0],
-        // height: windowSize[1],
-        width: 1024,
-        height: 768,
+        width: windowSize[0],
+        height: windowSize[1],
         frame: false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
@@ -40,9 +38,9 @@ const createWindow = () => {
     window.webContents.openDevTools();
 
     // Handle window resizing:
-    // window.on('resized', () => {
-    //     setWindowSize(window.getSize());
-    // });
+    window.on('resized', () => {
+        setWindowSize(window.getSize());
+    });
 };
 
 app.whenReady().then(() => {
