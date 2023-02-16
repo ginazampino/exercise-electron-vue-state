@@ -26,7 +26,7 @@
             color: $color--text-primary-onDark;
         }
 
-        button:focus {
+        button:focus-visible {
             outline-color: $color--text-primary-onDark;
         }
     }
@@ -98,7 +98,7 @@
             background: $color--accent-blue-onDark;
         }
 
-        #titlebar button:focus {
+        #titlebar button:focus-visible {
             outline-color: $color--accent-blue-onDark;
         }
     }
@@ -121,7 +121,7 @@
             background: $color--accent-pink-onDark;
         }
 
-        #titlebar button:focus {
+        #titlebar button:focus-visible {
             outline-color: $color--accent-pink-onDark;
         }
     }
@@ -144,7 +144,7 @@
             background: $color--accent-green-onDark;
         }
 
-        #titlebar button:focus {
+        #titlebar button:focus-visible {
             outline-color: $color--accent-green-onDark;
         }
     }
@@ -167,7 +167,7 @@
             background: $color--accent-purple-onDark;
         }
 
-        #titlebar button:focus {
+        #titlebar button:focus-visible {
             outline-color: $color--accent-purple-onDark;
         }
     }
@@ -190,7 +190,7 @@
             background: $color--accent-yellow-onDark;
         }
 
-        #titlebar button:focus {
+        #titlebar button:focus-visible {
             outline-color: $color--accent-yellow-onDark;
         }
     }
@@ -213,7 +213,7 @@
             background: $color--accent-orange-onDark;
         }
 
-        #titlebar button:focus {
+        #titlebar button:focus-visible {
             outline-color: $color--accent-orange-onDark;
         }
     }
@@ -236,7 +236,7 @@
             background: $color--accent-red-onDark;
         }
 
-        #titlebar button:focus {    
+        #titlebar button:focus-visible {    
             outline-color: $color--accent-red-onDark;
         }
     }

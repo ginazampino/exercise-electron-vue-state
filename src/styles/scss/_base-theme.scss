@@ -25,7 +25,7 @@
     transition: .1s outline-color ease-in-out;
 }
 
-*:focus, *:focus-visible {
+*:focus-visible {
     outline-offset: -2px;
     transition: .1s outline-color ease-in-out;
 }
