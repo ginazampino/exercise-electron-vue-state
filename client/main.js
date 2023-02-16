@@ -17,12 +17,14 @@ const createWindow = () => {
     const window = new BrowserWindow({
         width: windowSize[0],
         height: windowSize[1],
+        minWidth: 1024,
+        minHeight: 720,
         frame: false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }   
     });
-    
+
     // Load application from server:
     window.loadURL('http://localhost:5173/');
     
