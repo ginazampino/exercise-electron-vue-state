@@ -53,173 +53,80 @@
 
     /*
 
-        Accent: Blue
+        Color themes:
 
     */
 
     &.theme-blue {
-        #titlebar-title i {
-            color: $color--accent-blue-onLight;
-        }
-
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-blue-onLight;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-blue-onLight;
-        }
+        @include theme('blue', 'Light');
     }
-
-    /*
-
-        Accent: Pink
-
-    */
 
     &.theme-pink {
-        #titlebar-title i {
-            color: $color--accent-pink-onLight;
-        }
-
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-pink-onLight;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-pink-onLight;
-        }
+        @include theme('pink', 'Light');
     }
-
-    /*
-
-        Accent: Green
-
-    */
 
     &.theme-green {
-        #titlebar-title i {
-            color: $color--accent-green-onLight;
-        }
-
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-green-onLight;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-green-onLight;
-        }
+        @include theme('green', 'Light');
     }
-
-    /*
-
-        Accent: Purple
-
-    */
 
     &.theme-purple {
-        #titlebar-title i {
-            color: $color--accent-purple-onLight;
-        }
-
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-purple-onLight;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-purple-onLight;
-        }
+        @include theme('purple', 'Light');
     }
-
-    /*
-
-        Accent: Yellow
-
-    */
 
     &.theme-yellow {
-        #titlebar-title i {
-            color: $color--accent-yellow-onLight;
-        }
-
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-yellow-onLight;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-yellow-onLight;
-        }
+        @include theme('yellow', 'Light');
     }
-
-    /*
-
-        Accent: Orange
-
-    */
 
     &.theme-orange {
-        #titlebar-title i {
-            color: $color--accent-orange-onLight;
-        }
-
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-orange-onLight;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-orange-onLight;
-        }
+        @include theme('orange', 'Light');
     }
 
+    &.theme-red {
+        @include theme('red', 'Light');
+    }
     /*
 
         Accent: Red
 
     */
 
-    &.theme-red {
-        #titlebar-title i {
-            color: $color--accent-red-onLight;
-        }
+    // &.theme-red {
+    //     #titlebar-title i {
+    //         color: $color--accent-red-onLight;
+    //     }
 
-        #sidebar,
-        #titlebar li:hover {
-            background-color: $color--accent-red-onLight;
-        }
+    //     #sidebar,
+    //     #titlebar li:hover {
+    //         background-color: $color--accent-red-onLight;
+    //     }
 
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-red-onLight;
-        }
+    //     #titlebar button:focus-visible {
+    //         outline-color: $color--accent-red-onLight;
+    //     }
 
-        #sidebar {
-            font-weight: 500;
-            color: $color--accent-red-onRed;
+    //     #sidebar {
+    //         font-weight: 500;
+    //         color: $color--accent-red-onRed;
 
-            section:not(:last-child) {
-                border-bottom: 1px solid rgba($color--accent-red-onRed, .25);
-            }
+    //         section:not(:last-child) {
+    //             border-bottom: 1px solid rgba($color--accent-red-onRed, .25);
+    //         }
         
-            &:hover::-webkit-scrollbar-thumb {
-                background: $color--accent-red-onRed;
-            }
-        }
+    //         &:hover::-webkit-scrollbar-thumb {
+    //             background: $color--accent-red-onRed;
+    //         }
+    //     }
 
-        .sidebar-list {
-            li {
-                i {
-                    color: $color--accent-red-onRed;
-                }
+    //     .sidebar-list {
+    //         li {
+    //             i {
+    //                 color: $color--accent-red-onRed;
+    //             }
 
-                &:hover i {
-                    color: $color--accent-red-onLight;
-                }
-            }
-        }
-    }
+    //             &:hover i {
+    //                 color: $color--accent-red-onLight;
+    //             }
+    //         }
+    //     }
+    // }
 }

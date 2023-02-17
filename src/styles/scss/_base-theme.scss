@@ -23,11 +23,11 @@
     outline: 2px solid transparent;
     outline-offset: -2px;
     transition: .1s outline-color ease-in-out;
-}
 
-*:focus-visible {
-    outline-offset: -2px;
-    transition: .1s outline-color ease-in-out;
+    &:focus-visible {
+        outline-offset: -2px;
+        transition: .1s outline-color ease-in-out;
+    }
 }
 
 html {
@@ -58,7 +58,6 @@ p {
     margin: 0;
     padding: 0;
 }
-
 
 a, a:hover, a:visited, a:active {
     color: inherit;
@@ -132,7 +131,7 @@ table {
     padding-top: rem(45px);
 }
 
-// Titlebar:
+// Title bar:
 
 #titlebar {
     @include flex(center, center, row);
@@ -184,18 +183,14 @@ table {
     }
 }
 
-// Sidebar:
+// Side bar:
 
 #sidebar {
     height: 100%;
     overflow-y: overlay;
     position: relative;
     width: rem(210px);
-
-    // * {
-    //     @extend .noselect;
-    // }
-
+    
     section:first-child {
         padding-top: rem(25px);
         

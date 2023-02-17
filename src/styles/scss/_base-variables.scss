@@ -6,27 +6,45 @@ $screen-lg: rem(992px);
 $screen-xl: rem(1200px);
 $screen-xxl: rem(1400px);
 
-// Accent colors:
+// Monochrome:
 $color--white: #FAFAFA;
 $color--black: #222222;
 
-$color--accent-green-onLight: #c1dc9a;
-$color--accent-blue-onLight: #afd7f6;
-$color--accent-pink-onLight: #eebbdc;
-$color--accent-purple-onLight: #cebaef;
-$color--accent-yellow-onLight: #efdc91;
-$color--accent-orange-onLight: #f3b99e;
-$color--accent-red-onLight: #edb3b3;
+// Blue:
+$color--darkBlue: #52baff;
+$color--lightBlue: #afd7f6;
+
+// Red:
+$color--darkRed: #ff7171;
+$color--lightRed: #edb3b3;
+
+// Purple:
+$color--darkGreen: #a7de59;
+$color--lightGreen: #c1dc9a;
+
+// Pink:
+$color--darkPink: #ff90dc; 
+$color--lightPink: #eebbdc;
+
+// Purple:
+$color--darkPurple: #b28cff;
+$color--lightPurple: #cebaef;
+
+// Yellow:
+$color--darkYellow: #ffd452;
+$color--lightYellow: #efdc91;
+
+// Orange:
+$color--darkOrange: #ff944d;
+$color--lightOrange: #f3b99e;
 
 $color--accent-red-onRed: #bc4949;
 
-$color--accent-green-onDark: #a7de59;
-$color--accent-blue-onDark: #52baff;
-$color--accent-pink-onDark: #ff90dc;
-$color--accent-purple-onDark: #b28cff;
-$color--accent-yellow-onDark: #ffd452;
-$color--accent-orange-onDark: #ff944d;
-$color--accent-red-onDark: #ff7171;
+/*
+
+    Window modes:
+
+*/
 
 // Dark theme:
 $color--ui-dark-01: #1e1f21;
@@ -41,3 +59,79 @@ $color--ui-light-02: #eaeaea;
 $color--ui-light-03: #e0e0e0;
 $color--ui-light-04: #f6f6f7;
 $color--text-primary-onLight: $color--black;
+
+/*
+
+    Placeholders:
+
+*/
+
+// Blue on dark:
+%color--blue-onDark { color: $color--darkBlue; }
+%background--blue-onDark { background-color: $color--darkBlue; }
+%outline--blue-onDark { outline-color: $color--darkBlue; }
+
+// Blue on light:
+%color--blue-onLight { color: $color--lightBlue; }
+%background--blue-onLight { background-color: $color--lightBlue; }
+%outline--blue-onLight { outline-color: $color--lightBlue; }
+
+// Pink on dark:
+%color--pink-onDark { color: $color--darkPink; }
+%background--pink-onDark { background-color: $color--darkPink; }
+%outline--pink-onDark { outline-color: $color--darkPink; }
+
+// Pink on light:
+%color--pink-onLight { color: $color--lightPink; }
+%background--pink-onLight { background-color: $color--lightPink; }
+%outline--pink-onLight { outline-color: $color--lightPink; }
+
+// Green on dark:
+%color--green-onDark { color: $color--darkGreen; }
+%background--green-onDark { background-color: $color--darkGreen; }
+%outline--green-onDark { outline-color: $color--darkGreen; }
+
+// Green on light:
+%color--green-onLight { color: $color--lightGreen; }
+%background--green-onLight { background-color: $color--lightGreen; }
+%outline--green-onLight { outline-color: $color--lightGreen; }
+
+// Purple on dark:
+%color--purple-onDark { color: $color--darkPurple; }
+%background--purple-onDark { background-color: $color--darkPurple; }
+%outline--purple-onDark { outline-color: $color--darkPurple; }
+
+// Purple on light:
+%color--purple-onLight { color: $color--lightPurple; }
+%background--purple-onLight { background-color: $color--lightPurple; }
+%outline--purple-onLight { outline-color: $color--lightPurple; }
+
+// Yellow on dark:
+%color--yellow-onDark { color: $color--darkYellow; }
+%background--yellow-onDark { background-color: $color--darkYellow; }
+%outline--yellow-onDark { outline-color: $color--darkYellow; }
+
+// Yellow on light:
+%color--yellow-onLight { color: $color--lightYellow; }
+%background--yellow-onLight { background-color: $color--lightYellow; }
+%outline--yellow-onLight { outline-color: $color--lightYellow; }
+
+// Orange on dark:
+%color--orange-onDark { color: $color--darkOrange; }
+%background--orange-onDark { background-color: $color--darkOrange; }
+%outline--orange-onDark { outline-color: $color--darkOrange; }
+
+// Orange on light:
+%color--orange-onLight { color: $color--lightOrange; }
+%background--orange-onLight { background-color: $color--lightOrange; }
+%outline--orange-onLight { outline-color: $color--lightOrange; }
+
+// Red on dark:
+%color--red-onDark { color: $color--darkRed; }
+%background--red-onDark { background-color: $color--darkRed; }
+%outline--red-onDark { outline-color: $color--darkRed; }
+
+// Red on light:
+%color--red-onLight { color: $color--lightRed; }
+%background--red-onLight { background-color: $color--lightRed; }
+%outline--red-onLight { outline-color: $color--lightRed; }

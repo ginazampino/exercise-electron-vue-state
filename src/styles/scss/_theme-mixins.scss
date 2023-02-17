@@ -1,0 +1,25 @@
+@mixin theme($theme, $mode) {
+    // Font color:
+    #titlebar-title i,
+    .sidebar-list li:hover i,
+    .sidebar-toggle button:hover {
+        @extend %color--#{$theme}-on#{$mode};
+    }
+
+    #titlebar button:hover {
+        @if $mode == 'Dark' {
+            color: $color--text-primary-onLight;
+        }
+    }
+
+    // Background color:
+    #titlebar li:hover,
+    #sidebar:hover::-webkit-scrollbar-thumb {
+        @extend %background--#{$theme}-on#{$mode};
+    }
+
+    // Outline color:
+    #titlebar button:focus-visible {
+        @extend %outline--#{$theme}-on#{$mode};
+    }
+}

@@ -1,11 +1,21 @@
 .mode-dark {
     transition: .1s ease-in-out;
 
+    /*
+
+        Main window:
+
+    */
+
     &#app-content {
         background-color: $color--ui-dark-01;
     }
 
-    // Titlebar:
+    /*
+
+        Title bar:
+
+    */
 
     #titlebar {
         background-color: $color--ui-dark-03;
@@ -23,7 +33,6 @@
         &:hover {
             transition: .1s ease-in-out;
             background-color: rgba($color--ui-dark-04, .75);
-            color: $color--text-primary-onDark;
         }
 
         button:focus-visible {
@@ -31,7 +40,11 @@
         }
     }
 
-    // Sidebar:
+    /*
+
+        Side bar:
+
+    */
 
     #sidebar {
         background-color: $color--ui-dark-02;
@@ -82,162 +95,35 @@
 
     /*
 
-        Accent: Blue
+        Color themes:
 
     */
 
     &.theme-blue {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-blue-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-blue-onDark;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-blue-onDark;
-        }
+        @include theme('blue', 'Dark');
     }
-
-    /*
-
-        Accent: Pink
-
-    */
 
     &.theme-pink {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-pink-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-pink-onDark;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-pink-onDark;
-        }
+        @include theme('pink', 'Dark');
     }
-
-    /*
-
-        Accent: Green
-
-    */
 
     &.theme-green {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-green-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-green-onDark;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-green-onDark;
-        }
+        @include theme('green', 'Dark');
     }
-
-    /*
-
-        Accent: Purple
-
-    */
 
     &.theme-purple {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-purple-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-purple-onDark;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-purple-onDark;
-        }
+        @include theme('purple', 'Dark');
     }
-
-    /*
-
-        Accent: Yellow
-
-    */
 
     &.theme-yellow {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-yellow-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-yellow-onDark;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-yellow-onDark;
-        }
+        @include theme('yellow', 'Dark');
     }
-
-    /*
-
-        Accent: Orange
-
-    */
 
     &.theme-orange {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-orange-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-orange-onDark;
-        }
-
-        #titlebar button:focus-visible {
-            outline-color: $color--accent-orange-onDark;
-        }
+        @include theme('orange', 'Dark');
     }
 
-    /*
-
-        Accent: Red
-
-    */
-
     &.theme-red {
-        #titlebar-title i,
-        .sidebar-list li:hover i,
-        .sidebar-toggle button:hover {
-            color: $color--accent-red-onDark;
-        }
-
-        #titlebar li:hover,
-        #sidebar:hover::-webkit-scrollbar-thumb {
-            background: $color--accent-red-onDark;
-        }
-
-        #titlebar button:focus-visible {    
-            outline-color: $color--accent-red-onDark;
-        }
+        @include theme('red', 'Dark');
     }
 }
