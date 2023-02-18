@@ -1,0 +1,57 @@
+#titlebar {
+    @include flex(center, center, row);
+    height: rem(45px);
+    position: absolute;
+    user-select: none;
+    width: 100%;
+    z-index: 1;
+}
+
+#titlebar h1 {
+    font-family: 'DM Sans', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: rem(21px);
+    font-weight: 400;
+    line-height: rem(21px);
+    margin-bottom: rem(4.5px);
+    text-transform: lowercase;
+}
+
+#titlebar i {
+    font-size: rem(16px);
+    line-height: rem(16px);  
+}
+
+#titlebar ul,
+#titlebar li,
+#titlebar button {
+    @include flex(center, center, row);
+    height: 100%;
+}
+
+#titlebar li {
+    transition: .1s ease-in-out;
+    width: rem(45px);
+
+    &:hover {
+        transition: .1s ease-in-out;
+    }
+}
+
+#titlebar button {
+    background-color: transparent;
+    color: inherit;
+    flex: 1;
+}
+
+#titlebar-title {
+    @include flex(center, flex-start, row);
+    flex-grow: 1;
+    height: 100%;
+    padding: 0 rem(10px);
+    white-space: nowrap;
+
+    i {
+        user-select: none;
+        margin-right: rem(7.5px);
+    }
+}

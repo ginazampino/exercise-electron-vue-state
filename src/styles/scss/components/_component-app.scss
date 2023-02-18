@@ -1,0 +1,29 @@
+#app,
+#app-content {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    *::-webkit-scrollbar  {
+        background: transparent; 
+        height: rem(5px);
+        width: rem(5px);
+        z-index: 1;
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: transparent;
+        border-radius: rem(6px);
+    }
+}
+
+#app-content {
+    transition: .1s ease-in-out;
+}
+
+#app-layout {
+    @include flex(center, center, row);
+    height: 100%;
+    padding-top: rem(45px);
+}

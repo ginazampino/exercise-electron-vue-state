@@ -1,14 +1,25 @@
+// Reset:
 @import './css/sanitize.css';
 
+// Fonts:
 @import '../assets/fonts/index.css';
 @import '../assets/webfonts/all.min.css';
 
-@import './scss/base-functions';
-@import './scss/base-variables';
-@import './scss/base-mixins';
-@import './scss/base-utility';
+// Utilities:
+@import './scss/util/util-functions';
+@import './scss/util/util-variables';
+@import './scss/util/util-placeholders';
+@import './scss/util/util-mixins';
+@import './scss/util/util-classes';
+@import './scss/util/util-reset';
 
-@import './scss/theme-mixins';
-@import './scss/base-theme';
-@import './scss/theme-dark';
-@import './scss/theme-light';
+// Components:
+@import './scss/components/component-app';
+@import './scss/components/component-titlebar';
+@import './scss/components/component-sidebar';
+@import './scss/components/component-browser';
+
+// Themes:
+@import './scss/themes/theme-dark';
+@import './scss/themes/theme-light';
+@import './scss/themes/theme-accents';

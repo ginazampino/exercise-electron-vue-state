@@ -1,68 +1,6 @@
-// Screen widths:
-$screen-xsm: rem(0px);
-$screen-sm: rem(576px);
-$screen-md: rem(768px);
-$screen-lg: rem(992px);
-$screen-xl: rem(1200px);
-$screen-xxl: rem(1400px);
-
-// Monochrome:
-$color--white: #FAFAFA;
-$color--black: #222222;
-
-// Blue:
-$color--darkBlue: #52baff;
-$color--lightBlue: #afd7f6;
-
-// Red:
-$color--darkRed: #ff7171;
-$color--lightRed: #edb3b3;
-
-// Purple:
-$color--darkGreen: #a7de59;
-$color--lightGreen: #c1dc9a;
-
-// Pink:
-$color--darkPink: #ff90dc; 
-$color--lightPink: #eebbdc;
-
-// Purple:
-$color--darkPurple: #b28cff;
-$color--lightPurple: #cebaef;
-
-// Yellow:
-$color--darkYellow: #ffd452;
-$color--lightYellow: #efdc91;
-
-// Orange:
-$color--darkOrange: #ff944d;
-$color--lightOrange: #f3b99e;
-
-$color--accent-red-onRed: #bc4949;
-
 /*
 
-    Window modes:
-
-*/
-
-// Dark theme:
-$color--ui-dark-01: #1e1f21;
-$color--ui-dark-02: #2e2e30;
-$color--ui-dark-03: #363639;
-$color--ui-dark-04: #4e4e51;
-$color--text-primary-onDark: #f5f4f3;
-
-// Light theme:
-$color--ui-light-01: #eeeff1;
-$color--ui-light-02: #eaeaea;
-$color--ui-light-03: #e0e0e0;
-$color--ui-light-04: #f6f6f7;
-$color--text-primary-onLight: $color--black;
-
-/*
-
-    Placeholders:
+    Blue placeholders:
 
 */
 
@@ -76,6 +14,12 @@ $color--text-primary-onLight: $color--black;
 %background--blue-onLight { background-color: $color--lightBlue; }
 %outline--blue-onLight { outline-color: $color--lightBlue; }
 
+/*
+
+    Pink placeholders:
+
+*/
+
 // Pink on dark:
 %color--pink-onDark { color: $color--darkPink; }
 %background--pink-onDark { background-color: $color--darkPink; }
@@ -85,6 +29,12 @@ $color--text-primary-onLight: $color--black;
 %color--pink-onLight { color: $color--lightPink; }
 %background--pink-onLight { background-color: $color--lightPink; }
 %outline--pink-onLight { outline-color: $color--lightPink; }
+
+/*
+
+    Green placeholders:
+
+*/
 
 // Green on dark:
 %color--green-onDark { color: $color--darkGreen; }
@@ -96,6 +46,12 @@ $color--text-primary-onLight: $color--black;
 %background--green-onLight { background-color: $color--lightGreen; }
 %outline--green-onLight { outline-color: $color--lightGreen; }
 
+/*
+
+    Purple placeholders:
+
+*/
+
 // Purple on dark:
 %color--purple-onDark { color: $color--darkPurple; }
 %background--purple-onDark { background-color: $color--darkPurple; }
@@ -105,6 +61,12 @@ $color--text-primary-onLight: $color--black;
 %color--purple-onLight { color: $color--lightPurple; }
 %background--purple-onLight { background-color: $color--lightPurple; }
 %outline--purple-onLight { outline-color: $color--lightPurple; }
+
+/*
+
+    Yellow placeholders:
+
+*/
 
 // Yellow on dark:
 %color--yellow-onDark { color: $color--darkYellow; }
@@ -116,6 +78,12 @@ $color--text-primary-onLight: $color--black;
 %background--yellow-onLight { background-color: $color--lightYellow; }
 %outline--yellow-onLight { outline-color: $color--lightYellow; }
 
+/*
+
+    Orange placeholders:
+
+*/
+
 // Orange on dark:
 %color--orange-onDark { color: $color--darkOrange; }
 %background--orange-onDark { background-color: $color--darkOrange; }
@@ -126,6 +94,12 @@ $color--text-primary-onLight: $color--black;
 %background--orange-onLight { background-color: $color--lightOrange; }
 %outline--orange-onLight { outline-color: $color--lightOrange; }
 
+/*
+
+    Red placeholders:
+
+*/
+
 // Red on dark:
 %color--red-onDark { color: $color--darkRed; }
 %background--red-onDark { background-color: $color--darkRed; }
@@ -135,3 +109,6 @@ $color--text-primary-onLight: $color--black;
 %color--red-onLight { color: $color--lightRed; }
 %background--red-onLight { background-color: $color--lightRed; }
 %outline--red-onLight { outline-color: $color--lightRed; }
+
+// Red contrast:
+%border--contrastRed { border-color: #bc4949; }

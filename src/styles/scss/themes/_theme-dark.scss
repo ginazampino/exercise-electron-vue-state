@@ -1,0 +1,59 @@
+.mode-dark {
+    &#app-content {
+        background-color: $color--ui-dark-01;
+    }
+
+    // Title bar:
+    #titlebar {
+        background-color: $color--ui-dark-03;
+        box-shadow: 0 4px 6px -2px rgba($color--ui-dark-01, .25);
+        color: $color--text-primary-onDark;
+    }
+
+    #titlebar-title i {
+        color: $color--text-primary-onDark;
+    }
+
+    #titlebar li {
+        &:hover {
+            background-color: rgba($color--ui-dark-04, .75);
+        }
+
+        button:focus-visible {
+            outline-color: $color--text-primary-onDark;
+        }
+    }
+}
+
+.theme-undefined {
+    #sidebar {
+        background-color: $color--ui-dark-02;
+        color: $color--text-primary-onDark;
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: $color--text-primary-onDark;
+        }
+    }
+
+    #sidebar section:not(:last-child) {
+        border-bottom: 1px solid  $color--ui-dark-04;
+    }
+
+    #sidebar h2 {
+        color: rgba($color--text-primary-onDark, .45);
+    }
+
+    #sidebar li {
+        &:hover {
+            background-color: rgba($color--ui-dark-04, .35);
+
+            i {
+                color: $color--text-primary-onDark;
+            }
+        }
+
+        i {
+            color: rgba($color--text-primary-onDark, .25);
+        }
+    }
+}

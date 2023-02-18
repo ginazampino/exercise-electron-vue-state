@@ -1,0 +1,59 @@
+.mode-dark {
+    &.theme-blue {
+        @include theme('blue', 'Dark');
+    }
+
+    &.theme-pink {
+        @include theme('pink', 'Dark');
+    }
+
+    &.theme-green {
+        @include theme('green', 'Dark');
+    }
+
+    &.theme-purple {
+        @include theme('purple', 'Dark');
+    }
+
+    &.theme-yellow {
+        @include theme('yellow', 'Dark');
+    }
+
+    &.theme-orange {
+        @include theme('orange', 'Dark');
+    }
+
+    &.theme-red {
+        @include theme('red', 'Dark');
+    }
+}
+
+.mode-light {
+    &.theme-blue {
+        @include theme('blue', 'Light');
+    }
+
+    &.theme-pink {
+        @include theme('pink', 'Light');
+    }
+
+    &.theme-green {
+        @include theme('green', 'Light');
+    }
+
+    &.theme-purple {
+        @include theme('purple', 'Light');
+    }
+
+    &.theme-yellow {
+        @include theme('yellow', 'Light');
+    }
+
+    &.theme-orange {
+        @include theme('orange', 'Light');
+    }
+
+    &.theme-red {
+        @include theme('red', 'Light');
+    }
+}

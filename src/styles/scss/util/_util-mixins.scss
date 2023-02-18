@@ -1,3 +1,10 @@
+@mixin flex($align-items, $justify-content, $flex-direction) {
+    align-items: $align-items;
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
 @mixin theme($theme, $mode) {
     // Font color:
     #titlebar-title i,
@@ -14,6 +21,7 @@
 
     // Background color:
     #titlebar li:hover,
+    #sidebar,
     #sidebar:hover::-webkit-scrollbar-thumb {
         @extend %background--#{$theme}-on#{$mode};
     }
@@ -21,5 +29,11 @@
     // Outline color:
     #titlebar button:focus-visible {
         @extend %outline--#{$theme}-on#{$mode};
+    }
+
+    // Border color:
+    #sidebar section:not(:last-child) {
+        // @extend %border--contrast{$}
+        border-bottom: 1px solid $border--contrast#{$theme};
     }
 }

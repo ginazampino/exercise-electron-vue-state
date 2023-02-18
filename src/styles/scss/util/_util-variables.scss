@@ -1,0 +1,41 @@
+// Screen widths:
+$screen-xsm: rem(0px);
+$screen-sm: rem(576px);
+$screen-md: rem(768px);
+$screen-lg: rem(992px);
+$screen-xl: rem(1200px);
+$screen-xxl: rem(1400px);
+
+// Greyscale (Dark):
+$color--black: #222222;
+$color--ui-dark-01: #1e1f21;
+$color--ui-dark-02: #2e2e30;
+$color--ui-dark-03: #363639;
+$color--ui-dark-04: #4e4e51;
+$color--text-primary-onDark: #f5f4f3;
+
+// Greyscale (Light):
+$color--white: #FAFAFA;
+$color--ui-light-01: #eeeff1;
+$color--ui-light-02: #eaeaea;
+$color--ui-light-03: #e0e0e0;
+$color--ui-light-04: #f6f6f7;
+$color--text-primary-onLight: $color--black;
+
+// Accent colors (Light):
+$color--lightBlue: #afd7f6;
+$color--lightRed: #edb3b3;
+$color--lightGreen: #c1dc9a;
+$color--lightPink: #eebbdc;
+$color--lightPurple: #cebaef;
+$color--lightYellow: #efdc91;
+$color--lightOrange: #f3b99e;
+
+// Accent colors (Dark):
+$color--darkBlue: #52baff;
+$color--darkRed: #ff7171;
+$color--darkGreen: #a7de59;
+$color--darkPink: #ff90dc; 
+$color--darkPurple: #b28cff;
+$color--darkYellow: #ffd452;
+$color--darkOrange: #ff944d;

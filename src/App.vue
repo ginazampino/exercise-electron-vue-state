@@ -1,7 +1,10 @@
 <template>
 	<div id="app-content" :class="`mode-${ modeStore.modeTheme } theme-${ themeStore.colorTheme }`">
 		<TitleBar />
-		<div id="app-layout"></div>
+		<div id="app-layout">
+			<SideBar />
+            <MainBrowser />
+		</div>
 	</div>
 </template>
 
@@ -10,10 +13,14 @@
     import { useWinThemeStore } from './stores/WinThemeStore';
 	
 	import TitleBar from './components/TitleBar.vue';
+	import SideBar from './components/SideBar.vue';
+	import MainBrowser from './components/MainBrowser.vue';
 
 	export default {
 		components: {
-            TitleBar
+            TitleBar,
+			SideBar,
+			MainBrowser
 		},
 		setup() {
 			const themeStore = useWinThemeStore();

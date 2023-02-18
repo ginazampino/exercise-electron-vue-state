@@ -1,0 +1,31 @@
+.mode-light {
+    &#app-content {
+        background-color: $color--ui-light-04;
+    }
+
+    // Title bar:
+    #titlebar {
+        background-color: $color--ui-light-04;
+        box-shadow: 0 4px 6px -2px rgba($color--ui-dark-01, .25);
+        color: $color--text-primary-onLight;
+    }
+
+    #titlebar-title i {
+        color: rgba($color--ui-dark-04, .25);
+    }
+
+    #titlebar li {
+        &:hover {
+            background-color: rgba($color--ui-light-03, .7);
+        }
+
+        button:focus-visible {
+            outline-color: $color--text-primary-onLight;
+        }
+    }
+    
+    // Side bar:
+    #sidebar {
+        background-color: rgba($color--ui-light-03, .7);
+    }
+}
