@@ -34,6 +34,6 @@
     // Border color:
     #sidebar section:not(:last-child) {
         // @extend %border--contrast{$}
-        border-bottom: 1px solid $border--contrast#{$theme};
+        // border-bottom: 1px solid $border--contrast#{$theme};
     }
 }
