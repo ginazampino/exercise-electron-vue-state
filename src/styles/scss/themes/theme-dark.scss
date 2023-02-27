@@ -1,0 +1,65 @@
+.mode-dark {
+    // Electron:
+    &#electron-content {
+        background-color: $color--dark-01;
+    }
+
+    // Titlebar:
+    #titlebar {
+        background-color: $color--dark-03;
+        color: $color--text-onDark;
+
+        li {
+            button:focus-visible {
+                outline-color: $color--text-onDark;
+            }
+
+            &:hover {
+                background-color: rgba($color--dark-04, .75);
+            }
+        }
+    }
+
+    #titlebar-title i {
+        color: rgba($color--text-onDark, .25);
+    }
+}
+
+/*
+
+    When there is no accent color
+    enabled, render a plain theme.
+
+*/
+
+.mode-dark.theme-undefined { // "undefined" is a returned value
+    // Sidebar:
+    #sidebar {
+        background-color: $color--dark-02;
+        color: $color--text-onDark;
+
+        h2 {
+            color: rgba($color--text-onDark, .45);
+        }
+
+        li i {
+            color: rgba($color--text-onDark, .25);
+        }
+
+        li:hover {
+            background-color: rgba($color--dark-04, .35);
+
+            i {
+                color: $color--text-onDark;
+            }
+        }
+
+        section:not(:last-child) {
+            border-bottom-color: $color--dark-04;
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: $color--text-onDark;
+        }
+    }
+}

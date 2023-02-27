@@ -1,0 +1,65 @@
+.mode-light {
+    // Electron:
+    &#electron-content {
+        background-color: $color--light-02;
+    }
+
+    // Titlebar:
+    #titlebar {
+        background-color: $color--light-02;
+        color: $color--text-onLight;
+
+        li {
+            button:focus-visible {
+                outline-color: $color--text-onLight;
+            }
+
+            &:hover {
+                background-color: $color--light-04;
+            }
+        }
+    }
+
+    #titlebar-title i {
+        color: rgba($color--dark-04, .35);
+    }
+}
+
+/*
+
+    When there is no accent color
+    enabled, render a plain theme.
+
+*/
+
+.mode-light.theme-undefined { // "undefined" is a returned value
+    // Sidebar:
+    #sidebar {
+        background-color: $color--light-04;
+        color: $color--text-onLight;
+
+        h2 {
+            color: rgba($color--text-onLight, .45);
+        }
+
+        li i {
+            color: rgba($color--text-onLight, .25);
+        }
+
+        li:hover {
+            background-color: rgba($color--dark-04, .15);
+
+            i {
+                color: $color--text-onLight;
+            }
+        }
+
+        section:not(:last-child) {
+            border-bottom-color: rgba($color--text-onLight, .1);
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            background: $color--text-onDark;
+        }
+    }
+}

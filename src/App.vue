@@ -1,7 +1,7 @@
 <template>
-	<div id="app-content" :class="`mode-${ modeStore.modeTheme } theme-${ themeStore.colorTheme }`">
+	<div id="electron-content" :class="`mode-${ modeStore.modeTheme } theme-${ themeStore.colorTheme }`">
 		<TitleBar />
-		<div id="app-layout">
+		<div id="electron-layout">
 			<SideBar />
             <MainBrowser />
 		</div>

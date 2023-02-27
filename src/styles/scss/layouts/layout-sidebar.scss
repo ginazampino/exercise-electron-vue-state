@@ -2,7 +2,6 @@
     height: 100%;
     overflow-y: overlay;
     position: relative;
-    transition: background-color .1s ease-in-out;
     width: rem(210px);
 }
 
@@ -24,25 +23,18 @@
     }
 
     li {
-        cursor: pointer;
         font-size: rem(13px);
         padding: rem(5px) rem(25px);
-        transition: .1s ease-in-out;
 
         i {
             font-size: rem(16px);
             text-align: center;
-            transition: .1s ease-in-out;
             width: rem(20px);
         }
 
         span {
             margin-left: rem(11px);
         }
-    }
-
-    li:hover i {
-        transition: .1s ease-in-out;
     }
 }
 
@@ -59,11 +51,9 @@
 
     button {
         @extend .noselect;
-        background: transparent;
         padding: rem(5px) rem(10px);
         border-radius: rem(8px);
         font-size: rem(12px);
         line-height: rem(12px);
-        transition: .1s ease-in-out;
     }
 }

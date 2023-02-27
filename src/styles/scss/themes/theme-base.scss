@@ -1,0 +1,49 @@
+// Electron:
+#electron-content {
+    transition: .1s ease-in-out;
+}
+
+// Titlebar:
+#titlebar {
+    box-shadow: 0 4px 6px -2px rgba($color--dark-01, .25);
+
+    li {
+        transition: .1s ease-in-out;
+
+        &:hover {
+            transition: .1s ease-in-out;
+        }
+    }
+
+    button {
+        background-color: transparent;
+        color: inherit;
+    }
+}
+
+// Sidebar: 
+#sidebar {
+    transition: background-color .1s ease-in-out;
+
+    ul li {
+        cursor: pointer;
+        transition: .1s ease-in-out;
+
+        i {
+            transition: .1s ease-in-out;
+        }
+
+        &:hover i {
+            transition: .1s ease-in-out;
+        }
+    }
+
+    section:not(:last-child) {
+        border-bottom: 1px solid transparent;
+    }
+
+    .crop-toggle button {
+        background: transparent;
+        transition: .1s ease-in-out;
+    }
+}

@@ -1,14 +1,13 @@
 #titlebar {
+    @extend .noselect;
     @include flex(center, center, row);
     height: rem(45px);
     position: absolute;
-    user-select: none;
     width: 100%;
     z-index: 1;
 }
 
 #titlebar h1 {
-    font-family: 'DM Sans', 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: rem(21px);
     font-weight: 400;
     line-height: rem(21px);
@@ -29,18 +28,11 @@
 }
 
 #titlebar li {
-    transition: .1s ease-in-out;
     width: rem(45px);
-
-    &:hover {
-        transition: .1s ease-in-out;
-    }
 }
 
 #titlebar button {
-    background-color: transparent;
-    color: inherit;
-    flex: 1;
+    width: 100%;
 }
 
 #titlebar-title {
@@ -51,7 +43,6 @@
     white-space: nowrap;
 
     i {
-        user-select: none;
         margin-right: rem(7.5px);
     }
 }

@@ -1,0 +1,13 @@
+#app, // Vue hook
+#electron-content {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+#electron-layout {
+    @include flex(center, center, row);
+    height: 100%;
+    padding-top: rem(45px);
+}

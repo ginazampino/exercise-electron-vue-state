@@ -1,0 +1,91 @@
+/*
+
+    Used to quickly apply standard
+    flex rules to elements.
+
+*/
+
+@mixin flex($align-items, $justify-content, $flex-direction) {
+    align-items: $align-items;
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+}
+
+/*
+
+    Used to apply styling according 
+    to the application's state.
+
+*/
+
+@mixin theme($accent, $mode) {
+    #titlebar {
+        li:hover {
+            @extend %background--#{$accent}-on#{$mode};
+        }
+
+        button:hover { // "onDark" if theme is undefined
+            @if $mode == 'Dark' {
+                color: $color--text-onLight;
+            }
+        }
+
+        button:focus-visible {
+            @extend %outline--#{$accent}-on#{$mode};
+        }
+    }
+
+    #titlebar-title i {
+        $capitalAccent: capitalize($accent);
+
+        @if $mode == 'Dark' {
+            @extend %color--#{$accent}-on#{$mode};
+        };
+
+        @if $mode == 'Light' {
+            @extend %color--contrastLight#{$capitalAccent};
+        };
+    }
+
+    #sidebar {
+        @extend %background--#{$accent}-on#{$mode};
+
+        section:not(:last-child) {
+            $capitalAccent: capitalize($accent);
+
+            @if $mode == 'Dark' {
+                @extend %border--contrastDark#{$capitalAccent};
+            };
+
+            @if $mode == 'Light' {
+                @extend %border--contrastLight#{$capitalAccent};
+            };
+        }
+
+        section i,
+        section h2 {
+            $capitalAccent: capitalize($accent);
+    
+            @if $mode == 'Dark' {
+                @extend %color--contrastDark#{$capitalAccent};
+            };
+    
+            @if $mode == 'Light' {
+                @extend %color--contrastLight#{$capitalAccent};
+            };
+        }
+
+        &:hover::-webkit-scrollbar-thumb {
+            $capitalAccent: capitalize($accent);
+
+            @if $mode == 'Dark' {
+                @extend %color--contrastDark#{$capitalAccent};
+            }
+
+            @if $mode == 'Light' {
+                @extend %color--contrastLight#{$capitalAccent};
+            }
+        }
+    }
+}

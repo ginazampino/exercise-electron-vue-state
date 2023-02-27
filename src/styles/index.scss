@@ -5,21 +5,25 @@
 @import '../assets/fonts/index.css';
 @import '../assets/webfonts/all.min.css';
 
-// Utilities:
-@import './scss/util/util-functions';
-@import './scss/util/util-variables';
-@import './scss/util/util-placeholders';
-@import './scss/util/util-mixins';
-@import './scss/util/util-classes';
-@import './scss/util/util-reset';
+// Variables:
+@import './scss/variables/variable-resolutions';
+@import './scss/variables/variable-colors';
 
-// Components:
-@import './scss/components/component-app';
-@import './scss/components/component-titlebar';
-@import './scss/components/component-sidebar';
-@import './scss/components/component-browser';
+// Utilities:
+@import './scss/utilities/utility-functions';
+@import './scss/utilities/utility-mixins';
+@import './scss/utilities/utility-helpers';
+@import './scss/utilities/utility-resets';
+@import './scss/utilities/utility-placeholders';
+
+// Layouts:
+@import './scss/layouts/layout-electron';
+@import './scss/layouts/layout-titlebar';
+@import './scss/layouts/layout-sidebar';
+@import './scss/layouts/layout-browser';
 
 // Themes:
+@import './scss/themes/theme-base';
 @import './scss/themes/theme-dark';
 @import './scss/themes/theme-light';
-@import './scss/themes/theme-accents';
+@import './scss/themes/theme-accent';
